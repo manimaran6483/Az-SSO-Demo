@@ -1,0 +1,28 @@
+<div class="container">
+    <h3 class="text-primary">Employee Details</h3>
+    <button class="btn btn-primary" (click)="onClick()">Add Employee</button>
+    <hr style="color:red ;border:2px solid red">
+    <table class="table table-striped table-bordered">
+      <tr>
+        <th>Employee Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th style="text-align:center">Actions</th>
+      </tr>
+      <tr *ngFor="let emp of employees">
+        <td >{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.age}}</td>
+        <td>{{emp.salary}}</td>
+        <td class="links">
+          <a href="/delete/{{emp.id}}">Delete</a>
+          <a href="/update/{{emp.id}}">Update</a>
+        </td>
+      </tr>
+    </table>
+  
+    <hr style="color:red ;border:2px solid red">
+  </div>
