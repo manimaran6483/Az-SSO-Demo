@@ -54,7 +54,7 @@ export function MSALInstanceFactory(): IPublicClientApplication {
     auth: {
       clientId: '116619ae-a86b-466f-9c38-445ac0ec5ec0',
       authority: 'https://login.microsoftonline.com/cc2f2118-790f-4e3b-b7ed-31e9c37987c4',
-      redirectUri: 'https://purple-smoke-0da766900.6.azurestaticapps.net/',
+      redirectUri: 'http://localhost:4201/',
     },
     cache: {
       cacheLocation: BrowserCacheLocation.LocalStorage,
