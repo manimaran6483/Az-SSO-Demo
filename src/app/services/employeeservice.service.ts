@@ -12,7 +12,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class EmployeeService {
-  private appUrl = 'https://employee-rest-service-ewhag2bpcfd8c4ds.centralindia-01.azurewebsites.net/';
+  private appUrl = 'http://98.70.229.70/reverseproxy-secured/bsc/';
   constructor(private http: HttpClient) { }
 
   getEmployees(): Observable<Employee[]> {
